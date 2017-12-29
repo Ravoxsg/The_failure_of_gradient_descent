@@ -20,7 +20,7 @@ lr = 1e-3 #learning rate (default 1e-5)
 alpha = 0.9 #momentum parameter (default 0.9)
 sigma = 0.5
 mu = 0
-ev = 0 #max eigenvalue (default 1e0)
+ev = 1e8 #max eigenvalue (default 1e0)
 
 
 #FUNCTIONS
