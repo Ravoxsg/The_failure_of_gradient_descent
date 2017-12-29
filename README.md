@@ -19,5 +19,8 @@ The 3 scripts are respectively np_manual.py, pytorch.py and tensorf.py.
 I compare GD with Newton Raphson method. Since dimension is not too big here, the Hessian can easily be calculated and inversed. 
 
 Let's take an example with Pytorch and a ev value of 1e2, which is the order of magnitude of the condition number of A. That is still quite small. 
-The following shows gradient descent vs Newton's method for 2 different learning rates: 1e-6 and 1e-7. 
+The following shows gradient descent (blue) with a learning rate of 1e-6 versus Newton's method (orange):
 ![alt text](https://github.com/Ravoxsg/The-failure-of-gradient-descent/edit/master/pytorch1e-6.png)
+
+and now with a learning rate of 1e-7:
+![alt text](https://github.com/Ravoxsg/The-failure-of-gradient-descent/edit/master/pytorch1e-7.png)
