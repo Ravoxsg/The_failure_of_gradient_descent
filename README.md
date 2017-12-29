@@ -25,4 +25,4 @@ The following shows gradient descent (blue) with a learning rate of 1e-6 versus 
 and now with a learning rate of 1e-7:
 ![alt text](https://github.com/Ravoxsg/The-failure-of-gradient-descent/edit/master/pytorch1e-7.png)
 
-Setting the condition number via ev to a much higher value will lead gradient needing a smaller and smaller learning rate in order not to diverge. 
+Setting the condition number via \emph{ev} to a much higher value will lead gradient needing a smaller and smaller learning rate in order not to diverge. 
