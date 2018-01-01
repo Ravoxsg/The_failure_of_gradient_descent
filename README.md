@@ -12,7 +12,7 @@ Data is generated randomly. There are 600 datapoints, each of dimension 13. Labe
 ## How to do it
 The trick here to play on singular values is to write A in its singular value decomposition: 
 A = U.D.V^{T}
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large A=U.D.V^{T}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;A=U.D.V^{T}" title="\Large A=U.D.V^{T}" />
 
 where D is diagonal with Gaussian values, U and V are orthogonal. Generating U and V can be done by taking the first matrix in the QR decomposition of 2 random matrices. 
 
