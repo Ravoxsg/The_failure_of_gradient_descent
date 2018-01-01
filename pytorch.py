@@ -20,11 +20,11 @@ dimy = 4 #dimension of output
 bs = 30 #batch size (default 30)
 h = 4 #size of the hidden layer (default 4)
 epochs = 30 #number of epochs (default 50)
-lr = 1e-7 #learning rate (default 1e-5)
+lr = 1e-12 #learning rate (default 1e-5)
 alpha = 0.9 #momentum parameter (default 0.9)
 sigma = 0.5
 mu = 0
-ev = 1e0 #max eigenvalue (default 1e0)
+ev = 1e6 #max eigenvalue (default 1e0)
 criterion = nn.MSELoss() #loss
 
 
@@ -124,7 +124,9 @@ for i in range(epochs):
 
 #PLOTTING THE LOSS
 
-plt.plot(np.log(np.array(losses_gd)))
+plt.plot(np.log(np.array(losses_gd)), label="Gradient descent")
+plt.legend()
+plt.title("Log-loss over epochs")
 plt.show()
 
 

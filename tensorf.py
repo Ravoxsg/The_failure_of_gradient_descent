@@ -117,7 +117,9 @@ with tf.Session() as sess:
         
 #PLOTTING THE LOSS
 
-plt.plot(np.log(np.array(losses_gd)))
+plt.plot(np.log(np.array(losses_gd)), label="Gradient descent")
+plt.legend()
+plt.title("Log-loss over epochs")
 plt.show()
 
 
@@ -152,7 +154,9 @@ for i in range(epochs):
 
 #PLOTTING THE LOSS
 
-plt.plot(np.log(np.array(losses_newton)))
+plt.plot(np.log(np.array(losses_gd)), label="Gradient descent")
+plt.plot(np.log(np.array(losses_newton)), label="Newton-Raphson")
+plt.title('Log-Loss over epochs')
+plt.legend()
 #plt.ylim(ymin=-50, ymax=50)
 plt.show()
-
