@@ -40,6 +40,8 @@ and <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-7}">:
 
 ![3rd image](pytorch1e-7.png)
 
+In this case, <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-6}"> appeared to be an ideal learning rate. The gradient descent converged in around 20 epochs. However, it converges to a higher loss than with Newton's method.
+
 Setting the condition number via "ev" to a much higher value will lead gradient needing a smaller and smaller learning rate in order not to diverge. 
 
 For instance, let's now set "ev" to 10000. 
