@@ -28,7 +28,7 @@ The 3 scripts are respectively np_manual.py, pytorch.py and tensorf.py.
 I compare GD with Newton Raphson's method. Since dimension is not too large here, the Hessian can easily be calculated and inversed. 
 
 ## Some results
-Let's take an example with Pytorch and an "ev" value of 100, which is the order of magnitude of the condition number of A (in this case A will typically have a condition number of 400 or 500). That is still quite small. 
+Let's take an example with Pytorch and an "ev" value of 1, which is the order of magnitude of the condition number of A (in this case A will typically have a condition number of 3 or 4). That is still quite small. 
 The following shows gradient descent (blue) with a learning rate of <img src="https://latex.codecogs.com/svg.latex?\Large&space;10^{-6}}"> versus Newton's method (orange):
 ![alt text](https://github.com/Ravoxsg/The-failure-of-gradient-descent/edit/master/pytorch1e-6.png)
 
@@ -36,3 +36,5 @@ and now with a learning rate of <img src="https://latex.codecogs.com/svg.latex?\
 ![alt text](https://github.com/Ravoxsg/The-failure-of-gradient-descent/edit/master/pytorch1e-7.png)
 
 Setting the condition number via "ev" to a much higher value will lead gradient needing a smaller and smaller learning rate in order not to diverge. 
+
+For instance, let's now set "ev" to 10000. 
