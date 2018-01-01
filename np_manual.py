@@ -1,3 +1,6 @@
+#Training a 1-hidden layer neural network with backpropagation done manually.
+
+
 import  numpy as np 
 import matplotlib.pyplot as plt 
 from scipy.linalg import qr

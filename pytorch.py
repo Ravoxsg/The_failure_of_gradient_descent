@@ -1,3 +1,6 @@
+#Training a 1-hidden layer neural network using the PyTorch library.
+
+
 import  numpy as np 
 import matplotlib.pyplot as plt 
 from scipy.linalg import qr
@@ -21,7 +24,7 @@ lr = 1e-7 #learning rate (default 1e-5)
 alpha = 0.9 #momentum parameter (default 0.9)
 sigma = 0.5
 mu = 0
-ev = 1e2 #max eigenvalue (default 1e0)
+ev = 1e0 #max eigenvalue (default 1e0)
 criterion = nn.MSELoss() #loss
 
 
@@ -156,8 +159,10 @@ for i in range(epochs):
 
 #PLOTTING THE LOSS
 
-plt.plot(np.log(np.array(losses_gd)))
-plt.plot(np.log(np.array(losses_newton)))
+plt.plot(np.log(np.array(losses_gd)), label="Gradient descent")
+plt.plot(np.log(np.array(losses_newton)), label="Newton-Raphson")
+plt.title('Log-Loss over epochs')
+plt.legend()
 #plt.ylim(ymin=-50, ymax=50)
 plt.show()
 
