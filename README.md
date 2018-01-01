@@ -29,9 +29,12 @@ I compare GD with Newton Raphson's method. Since dimension is not too large here
 
 ## Some results
 Let's take an example with Pytorch and an "ev" value of 1, which is the order of magnitude of the condition number of A (in this case A will typically have a condition number of 3 or 4). That is still quite small. 
-The largest order of magnitude to the learning rate not leading to a divergence of gradient descent is <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-5}">
+The largest order of magnitude to the learning rate not leading to a divergence of gradient descent is <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-5}">:
 ![1st image](pytorch1e-5.png)
-
+Now gradient descent with <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-6}">:
+![2nd image](pytorch1e-6.png)
+and <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-7}">:
+![3rd image](pytorch1e-7.png)
 
 Setting the condition number via "ev" to a much higher value will lead gradient needing a smaller and smaller learning rate in order not to diverge. 
 
