@@ -18,10 +18,10 @@ where D is diagonal with Gaussian values, U and V are orthogonal. Generating U a
 A parameter named "ev" controls the weight that we add to the first singular value of this matrix (we add "ev" to the first element of D). This weight represents the ill-condition of the problem. A heavy such weigth will lead to GD needing a smaller and smaller learning rate to converge, if it converges at all. 
 
 ## What we do here
-I compare here GD versus Newton's method, with 3 different ways to do backpropagation:\
-_manually\
-_with Pytorch\
-_with Tensorflow
+I compare here GD versus Newton's method, with **3 different ways to do backpropagation**:\
+_**manually** (this is a great exercise)\
+_with **Pytorch**\
+_with **Tensorflow**
 
 The 3 scripts are respectively np_manual.py, pytorch.py and tensorf.py. 
 
