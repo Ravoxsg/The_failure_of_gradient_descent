@@ -46,7 +46,7 @@ Setting the condition number via "ev" to a much higher value will lead gradient 
 
 For instance, let's now set "ev" to 10000. 
 
-The first learning not diverging is <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-10}">:
+The first learning rate not diverging is <img src="https://latex.codecogs.com/svg.latex?\Large&space;lr=10^{-10}">:
 
 ![1st image](pytorch1e61e-10.png)
 
