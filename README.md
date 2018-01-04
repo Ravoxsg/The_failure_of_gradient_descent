@@ -10,7 +10,7 @@ I take the same use case that he mentions: a simple **one hidden layer neural ne
 Data is generated randomly. There are 600 datapoints, each of dimension 13. Labels are in dimension 4. The (13,4) matrix (named A in the code) mapping datapoints to labels that we are trying to learn is also generated randomly, with a Gaussian distribution. 
 
 ## How to do it
-The trick here to play on singular values is to write A in its singular value decomposition: 
+The trick here to play on the condition number is to write A in its singular value decomposition: 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;A=U.D.V^{T}">
 
 where D is diagonal with Gaussian values, U and V are orthogonal. Generating U and V can be done by taking the first matrix in the QR decomposition of 2 random matrices. 
